@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: url("/fonts/Space_Grotesk/SpaceGrotesk-VariableFont_wght.ttf");
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background: radial-gradient(125% 125% at 50% 90%, #fff 40%, #6366f1 100%);
+    min-height: 100vh;
+}
+
+#captures:empty::after {
+    content: 'Empty';
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+    opacity: .6;
+}
