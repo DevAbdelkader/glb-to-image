@@ -13,6 +13,7 @@ async function start() {
 
 	const Model = new ModelLoader(appRoot);
 	Model.setupOrbitControls();
+	
 	// Add Lights
 	const ambientLight = new THREE.AmbientLight(0xffffff, 1);
 	Model.scene.add(ambientLight);
